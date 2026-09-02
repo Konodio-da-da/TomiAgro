@@ -4,281 +4,250 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Premium Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-    <title>Tomi Agro</title>
+    <title>Tomi Agro - Modern & Sustainable Farming</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo"><img src="./images/Picsart_23-06-19_10-44-43-600.png" alt=""></div>
-        <div class="navcon">
-            <a href="#" id="active">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#products">PRODUCTS</a>
-            <a href="#contact">CONTACTS</a>
-        </div>
-        <div class="hambuger" id="hambuger" onclick="show(this)">
-            &#9776;
-        </div>
-        <div class="navend">
-            GET QUOTE
-        </div>
-    </nav>
+    <!-- Frosted Glass Navigation -->
+    <div class="navbar-wrapper">
+        <nav class="glass-navbar">
+            <div class="nav-brand">
+                <a href="#" class="brand-logo-text">
+                    <span class="tomi-text">TOMI</span> <span class="agro-text">AGRO</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#about">Sustainability</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hambuger" id="hambuger" onclick="show()">
+                &#9776;
+            </div>
+        </nav>
+    </div>
+    
+    <!-- Mobile Dropdown Navigation -->
     <div class="ham" id="Nav">
         <div class="NavBar">
-            <a href="#" id="active">HOME</a>
-        <a href="#about">ABOUT</a>
-        <a href="#products">PRODUCTS</a>
-        <a href="#contact">CONTACTS</a>
-        <div class="navend">
-            GET QUOTE
-        </div>
+            <a href="#" class="active" onclick="show()">Home</a>
+            <a href="#products" onclick="show()">Products</a>
+            <a href="#about" onclick="show()">About Us</a>
+            <a href="#about" onclick="show()">Sustainability</a>
+            <a href="#contact" onclick="show()">Contact</a>
         </div>
     </div>
-        <div class="cointainer">
-    <main class="ov">
-        <!-- <img src="./images/banner.jpg" alt=""> -->
-        <div class="ovcontent">
-            <div class="imgtext">
-                <h1> FARMING COMPANY</h1>
+    
+    <div class="container">
+        <!-- Hero Section -->
+        <main class="ov">
+            <div class="ovcontent">
+                <div class="imgtext">
+                    <h1>Experience the Future of<br>Sustainable Farming.</h1>
+                </div>
+                <div class="imgtext2">
+                    <p>Tomi Agro is a modern farm engineered to meet the highest standards of livestock and agricultural production, sustainably sourced to satisfy everyday human needs.</p>
+                </div>
+                <div class="imgtext3">
+                    <a href="#products"><b>Explore Our Products</b></a>
+                </div>
             </div>
-        <div class="imgtext2">
-            <p>Tomi Agro is a farm specially designed to meet the needs of a common man, by grooming and teaching you more about livestock farming and also to satisfy human want.</p>
-        </div>
-        <div class="imgtext3">
-            <b>Discover</b>
-        </div>
-    </div>
-        <div class="imageset">
-            <img src="./images/raw-whole-chicken.jpg" alt="">
-            <img src="./images/horizontal-closeup-shot-swine-pasture-fence-sunny-day.jpg" alt="">
-            <img src="./images/Picsart_23-07-26_09-39-12-864.jpg" alt="">
-        </div>
-    </main>
+        </main>
 
-    <aside class="v2">
-        <div class="sidetext" id="about">
-            <h1 style="font-size: 33px; color: rgb(32, 29, 29);">ABOUT TOMI AGRO</h1> <br>
-               <h1 style="font-size: 33px; color: greenyellow; border-bottom: 1px solid black; padding-bottom: .5em;"> FARM AND COMPANY</h1> 
-               <li>Consultation on animal farming.</li>
-               <li>Construction of pen.</li>
-               <li>Construction of tampolin and earth ponds.</li>
-               <li>Supply of fingerlings and others 
-                Sales of materials such as corn, pkc, soya cake etc.</li>
-                <li>Supply of day old chicks, pullet, turkey both foreign and local, Eggs and Layers.</li>
-                <li>Supply of piglets and others.</li>
-               <a href="#">Read More</a>
+        <!-- About Section -->
+        <aside class="v2" id="about">
+            <div class="sidetext">
+                <h1 style="font-size: 36px; font-weight: 800; color: #1a1a1a;">ABOUT TOMI AGRO</h1>
+                <h2 style="font-size: 24px; color: #8bc34a; margin-bottom: 1.5rem; font-weight: 600;">FARM AND COMPANY</h2> 
+                <ul>
+                    <li>Consultation on animal farming.</li>
+                    <li>Construction of pens.</li>
+                    <li>Construction of trampoline and earth ponds.</li>
+                    <li>Supply of fingerlings, and sales of materials such as corn, PKC, soya cake, etc.</li>
+                    <li>Supply of day-old chicks, pullets, turkeys (foreign and local), eggs, and layers.</li>
+                    <li>Supply of piglets and livestock essentials.</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Get in Touch</a>
             </div>
             <div class="imgcontainer">
                 <div class="sideimg">
-                    <img src="./images/little-chicks-farm.jpg" alt="">
+                    <img src="./images/little-chicks-farm.jpg" alt="Tomi Agro Farm operations">
                 </div>
             </div>
-    </aside>
+        </aside>
 
-    <div class="choosesection">
-        <h1>Why Choose Us</h1>
-        <p>We are easy to work with. We take our work seriously, We take pride in providing outstanding services and  <br>
-            Quality product and Services. </p>
-         <div class="choosemid">
-             <div class="firstcolumn">
-                 <div class="flex_I_ES">
-                     <div class="icon">
-                         <img src="./images/icon1.png" alt="">
-                        </div>
-                        <div class="ES">
-                            <p><b>Excellent Service</b></p>
-                        </div>
-                    </div>
-                 <div class="ESwriteup">
-                     <p>Provide service to consistently <br> meet and even exceed customers' <br> expectations.</p>
-                 </div>
-
-
-                 <div class="QAR">
-                     <div class="flex_I_ES">
-                         <div class="icon">
-                             <img src="./images/icon3.png" alt="">
-                            </div>
-                            <div class="ES">
-                                <p><b>Quality And Reliability</b></p>
-                            </div>
-                        </div>
-                        <div class="ESwriteup">
-                            <p>Provide quality service and <br> reliability of product.</p>
+        <!-- Why Choose Us Section -->
+        <div class="choosesection">
+            <div class="choose-header">
+                <h1>Why Choose Us</h1>
+                <p>We are easy to work with. We take our work seriously, taking absolute pride in providing outstanding services and top-tier agricultural products.</p>
+            </div>
+            
+            <div class="choosemid">
+                <!-- Left Side: Features List -->
+                <div class="choose-features">
+                    <div class="feature-item">
+                        <div class="icon"><img src="./images/icon1.png" alt="Service"></div>
+                        <div class="feature-text">
+                            <h3>Excellent Service</h3>
+                            <p>Providing services that consistently meet and exceed customer expectations.</p>
                         </div>
                     </div>
-             </div>
-             <div class="choosemid2">
-                 <div class="firstcolumn">
-                     <div class="flex_I_ES">
-                         <div class="icon">
-                             <img src="./images/icon2.png" alt="">
-                            </div>
-                            <div class="ES">
-                                <p><b>Clean Working</b></p>
-                            </div>
+                    <div class="feature-item">
+                        <div class="icon"><img src="./images/icon3.png" alt="Quality"></div>
+                        <div class="feature-text">
+                            <h3>Quality And Reliability</h3>
+                            <p>Delivering premium quality services and absolute product reliability.</p>
                         </div>
-                     <div class="ESwriteup">
-                         <p>Provide peek and excellent <br> results on our works.</p>
-                     </div>
-    
-    
-                     <div class="QAR">
-                         <div class="flex_I_ES">
-                             <div class="icon">
-                                 <img src="./images/icon4.png" alt="">
-                                </div>
-                                <div class="ES">
-                                    <p><b>Expect Farmer</b></p>
-                                </div>
-                            </div>
-                            <div class="ESwriteup">
-                                <p>Trained and qualified farmer.</p>
-                            </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><img src="./images/icon2.png" alt="Clean Working"></div>
+                        <div class="feature-text">
+                            <h3>Clean Working</h3>
+                            <p>Ensuring peak hygiene and excellent standards across all farm setups.</p>
                         </div>
-                 </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon"><img src="./images/icon4.png" alt="Expert Farmers"></div>
+                        <div class="feature-text">
+                            <h3>Expert Farmers</h3>
+                            <p>Managed by highly trained and qualified agricultural professionals.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side: Image -->
+                <div class="choose-image">
+                    <img src="./images/little-chicks-farm.jpg" alt="Farm Chicks">
+                </div>
+            </div>
+        </div>
 
-             </div>
-             <div class="choosemid3">
-                 <div>
-                     <img src="./images/little-chicks-farm.jpg" alt="">
-
-                 </div>
-             </div>
-         </div>
-         <div class="readmorebtn">
-             <a href="#">Read More</a>
-         </div>
-    </div>
-
-    <div class="products" id="products" >
-        <h1>Our Products</h1>
-        <div class="imgset1">
-            <div class="card">
-            <div class="image-box">
-                        <img src="./images/horizontal-closeup-shot-swine-pasture-fence-sunny-day.jpg" alt="" class="img1">
+        <!-- Products Section -->
+        <div class="products" id="products">
+            <h1>Our Premium Products</h1>
+            <div class="imgset">
+                <div class="card">
+                    <div class="image-box">
+                        <img src="./images/horizontal-closeup-shot-swine-pasture-fence-sunny-day.jpg" alt="Piglets">
                     </div>
                     <div class="content">
                         <h2>Piglets</h2>
-                        <p>Supply on piglets, Feeds and others</p>
-                    </div>
-            </div>
-               <div class="card">
-
-                   <div class="image-box">
-                       <img src="./images/little-chicks-farm.jpg" alt="" class="img2">
-                    </div>
-                    <div class="content">
-                        <h2>Day old chick</h2>
-                        <p>Supply on pullet, Chicks, Turkey both foreign and local, Sales of Eggs and Layers</p>
+                        <p>Supply of healthy piglets, quality feeds, and housing consultation.</p>
                     </div>
                 </div>
                 <div class="card">
-
                     <div class="image-box">
-                        <img src="./images/images (28).jpeg" alt="" class="img3">
+                        <img src="./images/little-chicks-farm.jpg" alt="Day old chicks">
                     </div>
                     <div class="content">
-                        <h2>Catfish</h2>
-                        <p>Supply of fingerlings, Sales of Big Catfish etc</p>
+                        <h2>Day-Old Chicks</h2>
+                        <p>Supply of pullets, chicks, local/foreign turkeys, and fresh table eggs.</p>
                     </div>
                 </div>
-              
-        </div>
-
-                <div class="imgset2">
-                    <div class="card">
-
-                        <div class="image-box">
-                            <img src="./images/raw-whole-chicken.jpg" alt="" class="img4">
-                        </div>
-                        <div class="content">
-                            <h2>Frozen chicken</h2>
-                            <p>Supply on Frozen chicken</p>
-                        </div>
+                <div class="card">
+                    <div class="image-box">
+                        <img src="./images/images (28).jpeg" alt="Catfish">
                     </div>
-                    <div class="card">
-
-                        <div class="image-box">
-                            <img src="./images/Picsart_23-07-26_09-39-12-864.jpg" alt="" class="img5">
-                        </div>
-                        <div class="content">
-                            <h2>Fish feed</h2>
-                            <p>Fish feed(4mm-6mm), Sales of materials such as corn,pkc,soya cake etc</p>
-                        </div>
+                    <div class="content">
+                        <h2>Catfish & Fingerlings</h2>
+                        <p>Supply of hardy fingerlings and full-grown market-ready catfish.</p>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="image-box">
+                        <img src="./images/raw-whole-chicken.jpg" alt="Frozen chicken">
+                    </div>
+                    <div class="content">
+                        <h2>Frozen Chicken</h2>
+                        <p>Hygienically processed, premium whole and cut-up frozen chicken.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="image-box">
+                        <img src="./images/Picsart_23-07-26_09-39-12-864.jpg" alt="Fish feed">
+                    </div>
+                    <div class="content">
+                        <h2>Feeds & Supplements</h2>
+                        <p>High-yield fish feeds (4mm-6mm), corn, PKC, and soybean cake.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Location Section -->
+        <div class="getintouch" id="Location">
+            <h1>Find Us at the Source</h1>
+            <div class="iframe-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.6578811737104!2d5.620708555811938!3d6.353152698402566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3151cabb073%3A0x3f7a4f3ea48d858a!2s20%20Ivbiye%20Street%2C%20Use%2C%20Benin%20City%2C%20Edo!5e0!3m2!1sen!2sng!4v1682453573750!5m2!1sen!2sng" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="footer" id="contact">
+            <div class="footer-top">
+                <div class="contact-form-section">
+                    <h1>Contact Us</h1>
+                    <form action="https://formsubmit.co/el/yatupu" method="POST" class="contact-form">
+                        <div class="input-row">
+                            <input type="text" name="Fullname" placeholder="Full Name" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
+                            <input type="number" name="phoneno" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-row">
+                            <textarea name="Message" placeholder="How can we help you?" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                    <div class="social_icon">
+                        <a href="#"><img src="./images/bxl-facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="./images/bxl-instagram.svg" alt="Instagram"></a>
+                        <a href="#"><img src="./images/bxl-twitter.svg" alt="Twitter"></a>
+                        <a href="https://wa.me/2348066463721"><img src="./images/bxl-whatsapp.svg" alt="WhatsApp"></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-col info">
+                    <h2>Our Location</h2>
+                    <a href="#Location"><p>20 Ivbiye Street, Use, Benin City, Edo</p></a> 
+                    <a href="tel:+2348066463721"><p>+2348066463721</p></a> 
+                    <a href="mailto:Tomi2k10@gmail.com"><p>Tomi2k10@gmail.com</p></a>
+                </div>
+                <div class="footer-col menu">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col newsletter">
+                    <h2>Stay Updated</h2>
+                    <p>Subscribe to our newsletter for the latest news and offers.</p>
+                    <form action="" class="nl-form">
+                        <input type="email" required placeholder="Enter your email">
+                        <button type="button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="getintouch" id="Location">
-        <h1>Location</h1>
-        <div class="iframe">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.6578811737104!2d5.620708555811938!3d6.353152698402566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1040d3151cabb073%3A0x3f7a4f3ea48d858a!2s20%20Ivbiye%20Street%2C%20Use%2C%20Benin%20City%2C%20Edo!5e0!3m2!1sen!2sng!4v1682453573750!5m2!1sen!2sng" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
-        </div>
-    </div>
-    <footer class="footer" id="contact">
-        <h1>Contact Us</h1>
-        <form action="https://formsubmit.co/el/yatupu" method="POST">
-                <div class="input1">
-            <input type="text" name="Fullname" placeholder="Full Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="number" name="phoneno" placeholder="Phone Number" required>
-            <div class="social_icon">
-                <img src="./images/bxl-facebook.svg" alt="">
-                <img src="./images/bxl-instagram.svg" alt="">
-                <img src="./images/bxl-twitter.svg" alt="">
-                <a href="https://wa.me/2348066463721"><img src="./images/bxl-whatsapp.svg" alt=""></a>
-            </div>
-        </div>
-        <div class="input2">
-            <input type="text" name="Message" placeholder="Message" required>
-            <button><b>Send</b></button>
-        </div>
-        </form>
-        <div class="footerbottom">
-            <div class="info">
-               <a href="#Location"> <p>Location</p> </a> 
-                <br>
-                <br>
-               <a href="tel:+2348066463721"><p>+2348066463721</p></a> 
-                <br>
-                <br>
-               <a href="mailto:Tomi2k10@gmail.com"> <p>Tomi2k10@gmail.com</p> </a>
-            </div>
-            <div class="menu">
-                <h2>Menus</h2>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <br>
-                    <li><a href="#about">About</a></li>
-                    <br>
-                    <li><a href="#products">Products</a></li>
-                    <br>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-                <div class="newsletter">
-                    <h2>Newsletter</h2>
-                    <div class="Nl">
-                        <form action="">
-                            <input type="email" required placeholder="Enter your email">
-                           <a href="mailto:olasenisamuel8@gmail.com"> <div><button>Subscribe</button></div> </a> 
-                        </form>
-                    </div>
-                </div>
-        </div>
-    </footer>
-</div>
+
+    <script>
+       function show(){
+            document.getElementById('Nav').classList.toggle('active');
+       }
+    </script>
 </body>
 </html>
-<script>
-   function show(){
-        document.getElementById('Nav').classList.toggle('active');
-       let ham = document.getElementById('hambuger')
-        //    icon.classList.toggle('&times')
-           }
-        //    let show = function(icon){
-        //     icon.classList.toggle('&times')
-        //    }
-</script>
